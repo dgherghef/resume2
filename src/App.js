@@ -23,9 +23,9 @@ function App() {
           <PuffLoader color={'#AB6D46'} loading={loading} size={150} />
         </div>
       ) : (
-        <Router>
+        <Router basename='/resume2'>
           <Routes>
-            <Route path='/' exact element={<Home />} />
+            <Route path='/resume2' exact element={<Home />} />
             <Route path='/about' exact element={<About />} />
             <Route path='/resume' exact element={<Resume />} />
             <Route path='/portfolio' exact element={<Portfolio />} />
