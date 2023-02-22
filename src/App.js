@@ -1,23 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './routes/Home';
+import About from './routes/About';
+import Resume from './routes/Resume';
+import Portfolio from './routes/Portfolio';
+import Contact from './routes/Contact';
+import { useEffect, useState } from 'react';
+import PuffLoader from 'react-spinners/PuffLoader';
 
 function App() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {loading ? (
+        <div className='App'>
+          <PuffLoader color={'#AB6D46'} loading={loading} size={150} />
+        </div>
+      ) : (
+        <Router>
+          <Routes>
+            <Route path='/' exact element={<Home />} />
+            <Route path='/about' exact element={<About />} />
+            <Route path='/resume' exact element={<Resume />} />
+            <Route path='/portfolio' exact element={<Portfolio />} />
+            <Route path='/contact' exact element={<Contact />} />
+          </Routes>
+        </Router>
+      )}
     </div>
   );
 }
