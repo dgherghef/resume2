@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import About from './routes/About';
 import Resume from './routes/Resume';
@@ -23,9 +23,9 @@ function App() {
           <PuffLoader color={'#AB6D46'} loading={loading} size={150} />
         </div>
       ) : (
-        <Router basename='/resume2'>
+        <Router>
           <Routes>
-            <Route path='/resume2' exact element={<Home />} />
+            <Route path='/' exact element={<Home />} />
             <Route path='/about' exact element={<About />} />
             <Route path='/resume' exact element={<Resume />} />
             <Route path='/portfolio' exact element={<Portfolio />} />

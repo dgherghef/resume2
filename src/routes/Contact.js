@@ -147,12 +147,12 @@ function Contact() {
               <div style={{ width: '50%', float: 'left' }}>
                 <p>LinkedIn:</p>
                 <a
-                  href='https://www.linkedin.com/in/denisa-elena-72076023a'
+                  href='https://www.linkedin.com/in/denisa-gherghef-72076023a'
                   target='_blank'
                   rel='noreferrer'
                   style={{ color: '#893914' }}
                 >
-                  <p>https://www.linkedin.com/in/denisa-elena-72076023a</p>
+                  <p>https://www.linkedin.com/in/denisa-gherghef-72076023a</p>
                 </a>
               </div>
             </div>
