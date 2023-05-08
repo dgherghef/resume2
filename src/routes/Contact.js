@@ -137,7 +137,7 @@ function Contact() {
                 <p style={{ color: '#893914' }}>dgherghef@gmail.com</p>
               </div>
             </div>
-            <div style={{ height: '30%' }}>
+            <div style={{ height: '60%' }}>
               <div id='contact-app-icon'>
                 <i
                   className='bi bi-linkedin'
