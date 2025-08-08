@@ -30,29 +30,15 @@ function Resume() {
             <h2 style={{ color: '#AB6D46' }}>Professional Experience</h2>
             <ul id='bullet'>
               <li>
-                <p>
-                  I don't have any professional experience, because as far as I
-                  have noticed, no one hires beginners, so the only experience I
-                  have is from college and high school. In high school I have
-                  descovered my passion for design and how many things I can
-                  create mixing programming with it. Participating in contests
-                  made me realize that I can achieve my goals only if I work
-                  hard.
-                </p>
                 <div style={{ paddingLeft: '5%' }}>
                   <div>
                     <li>
-                      Fourth prize winner - National Applied Informatics Contest
-                      "Info-Practic" the thirteenth edition
+                      BitSoft - Software Interface Implementation Consultant
                     </li>
                     <li>
-                      First prize winner - Regional Poster Contest "Gandim eco"
-                      the fourth edition
+                      Nenos - Full-Stack Developer
                     </li>
-                    <li>
-                      First prize winner - National Contest Infoeducatia -
-                      Multimedia section
-                    </li>
+                    
                   </div>
                 </div>
               </li>
